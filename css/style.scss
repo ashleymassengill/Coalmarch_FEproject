@@ -18,6 +18,16 @@ button{
   border: none;
 }
 
+.bluebutton{
+  color: white;
+  background: $blue;
+  border: 1px solid $blue;
+}
+.bluebutton:hover{
+  background: $dkblue;
+  border: 1px solid $ltgray;
+}
+
 h1{
   text-transform: uppercase;
   margin: 0px;
@@ -30,9 +40,16 @@ h4{
   margin: 0px;
 }
 
+p{
+  margin: 0px;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 31px;
+}
+
 header{
-  margin-left: 8.5%;
-  margin-right: 8.5%;
+  padding-left: 8.5%;
+  padding-right: 8.5%;
   height: 85px;
   .logo{
     margin: 0;
@@ -57,8 +74,9 @@ header{
           font-size: 17px;
           color: $gray;
         }
-        .bluebutton{
-          background: $blue;
+        a:hover{
+          color: $dkblue;
+          text-decoration: underline;
         }
       }
     }
@@ -68,7 +86,6 @@ header{
 .hero{
   background: url(../images/hero.jpg) no-repeat top center;
   background-size: cover;
-  background-attachment: fixed;
   height: 415px;
   margin: 0px;
   .herotext{
@@ -82,30 +99,119 @@ header{
       color: white;
       padding-bottom: 25px;
     }
-    .bluebutton{
-      color: white;
-      background: $blue;
-    }
   }
 }
 
 #about{
-  min-height: 600px;
+  height: 500px;
+  padding: 3.5% 15% 3.5% 15%;
   .abouttext{
     h1{
       font-size: 32px;
       font-weight: 300;
       color: gray;
       margin: 0px;
-      padding-top: 70px;
       padding-bottom: 5px;
     }
     h4{
-      font-size: 19px;
-      font-weight: 200;
       color: $mdgray;
-      margin: 0px;
       padding-bottom: 45px;
     }
   }
+  .aboutbox{
+    box-sizing: border-box;
+    border: 1px solid $ltgray;
+    border-radius: 5%;
+    min-height: 365px;
+    float: left;
+    width: 30.65%;
+    padding: 30px;
+    i{
+      font-size: 40px;
+      color: white;
+      padding: 30px 32.85px 30px 32.85px;
+      margin: 30px;
+      border-radius: 100%;
+      border: 1px solid $blue;
+      background: $blue;
+      transition: all .7s ease-in-out;
+    }
+    h4{
+      font-size: 19px;
+      color: gray;
+      text-transform: uppercase;
+    }
+    p{
+      color: gray;
+    }
+  }
+  .aboutbox:hover{
+    border: 1px solid $dkblue;
+    i{
+      color: $blue;
+      border: 1px solid $blue;
+      background: white;
+      transform: rotate(-360deg);
+    }
+  }
+  .middlebox{
+    margin-left: 40px;
+    margin-right: 40px;
+  }
 }
+
+#services{
+  clear: both;
+  background: $dkblue;
+  min-height: 650px;
+  padding: 3.5% 15% 7% 15%;
+  .servicestext{
+    h1{
+      font-size: 32px;
+      font-weight: 300;
+      color: white;
+      margin: 0px;
+      padding-bottom: 5px;
+    }
+    h4{
+      color: $mdgray;
+      padding-bottom: 65px;
+    }
+  }
+  .servicesbox{
+    width: 49%;
+    img{
+      height: 210px;
+      object-fit: contain;
+      padding-bottom: 40px;
+    }
+    h4{
+
+      text-transform: uppercase;
+      color: white;
+    }
+    p{
+      color: white;
+      margin: 7% 11% 6% 11%;
+    }
+    .transbutton{
+      background: none;
+      border: 1px solid $ltgray;
+      border-radius: 5px;
+      padding-left: 9%;
+      padding-right: 9%;
+    }
+    .transbutton:hover{
+      background: $blue;
+      border: none;
+    }
+  }
+  .left{
+    float: left;
+  }
+  .right{
+    float: right;
+  }
+}
+
+@import "media.scss";
