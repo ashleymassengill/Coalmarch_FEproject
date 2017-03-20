@@ -5,12 +5,13 @@ body{
   text-align: center;
   margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
 }
 
 button{
   height: 40px;
   text-transform: uppercase;
-  font-size: 17px;
+  font-size: 1.065rem;
   border-radius: 5px;
   color: white;
   padding-left: 3%;
@@ -35,14 +36,13 @@ h1{
 }
 
 h4{
-  font-size: 19px;
+  font-size: 1.19rem;
   font-weight: 200;
   margin: 0px;
 }
 
 p{
   margin: 0px;
-  font-size: 16px;
   font-weight: 200;
   line-height: 31px;
 }
@@ -63,15 +63,20 @@ header{
     text-align: right;
     float: right;
     width: 70%;
-    @include verticalcenter;
+    padding-top: 22px;
     ul{
+      display: inline;
+      padding-right: 40px;
+      i{
+        display: none;
+      }
       li{
         display: inline;
         padding-left: 40px;
         a{
           text-decoration: none;
           text-transform: uppercase;
-          font-size: 17px;
+          font-size: 1.065rem;
           color: $gray;
         }
         a:hover{
@@ -91,7 +96,7 @@ header{
   .herotext{
     @include verticalcenter;
     h1{
-      font-size: 45px;
+      font-size: 2.82rem;
       font-weight: 400;
       color: white;
     }
@@ -107,7 +112,7 @@ header{
   padding: 3.5% 15% 3.5% 15%;
   .abouttext{
     h1{
-      font-size: 32px;
+      font-size: 2rem;
       font-weight: 300;
       color: gray;
       margin: 0px;
@@ -137,7 +142,6 @@ header{
       transition: all .7s ease-in-out;
     }
     h4{
-      font-size: 19px;
       color: gray;
       text-transform: uppercase;
     }
@@ -167,7 +171,7 @@ header{
   padding: 3.5% 15% 7% 15%;
   .servicestext{
     h1{
-      font-size: 32px;
+      font-size: 2rem;
       font-weight: 300;
       color: white;
       margin: 0px;

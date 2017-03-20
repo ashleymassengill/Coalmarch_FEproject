@@ -1,0 +1,157 @@
+// mobile responsive
+@media only screen and (min-device-width : 1px) and (max-device-width : 767px) {
+  // header
+  header{
+    .menu{
+      ul{
+        list-style: none;
+        padding-right: 0px;
+        i{
+          display: inline;
+          font-size: 2rem;
+          color: $dkblue;
+        }
+        li{
+          display: block;
+          padding: 10px 0px 10px 0px;
+          display: none;
+        }
+        a{
+          color: $dkblue;
+        }
+      }
+    }
+  }
+  // about
+  #about{
+    height: auto;
+    .aboutbox{
+      float: none;
+      width: 100%;
+    }
+    .middlebox{
+      margin: 5% 0px 5% 0px;
+    }
+  }
+  // services
+  #services{
+    height: 1200px;
+    .servicesbox{
+      width: 100%;
+      margin-bottom: 10%;
+    }
+  }
+}
+
+@media(max-width: 767px) {
+  // header
+  header{
+    .menu{
+      ul{
+        list-style: none;
+        i{
+          display: inline;
+          font-size: 2rem;
+          color: $dkblue;
+        }
+        li{
+          display: block;
+          display: none;
+        }
+      }
+    }
+  }
+  // about
+  #about{
+    height: auto;
+    .aboutbox{
+      float: none;
+      width: 100%;
+    }
+    .middlebox{
+      margin: 5% 0px 5% 0px;
+    }
+  }
+  // services
+  #services{
+    height: 1200px;
+    .servicesbox{
+      width: 100%;
+      margin-bottom: 10%;
+    }
+  }
+}
+
+// tablet responsive
+@media(min-device-width: 768px) and (max-device-width: 1010px) {
+  // header
+  header{
+    padding-left: 5%;
+    padding-right: 5%;
+    .logo{
+      width: 15%;
+    }
+    .menu{
+      width: 85%;
+    }
+  }
+  // about
+  #about{
+    padding-left: 5%;
+    padding-right: 5%;
+    .aboutbox{
+      width: 30%;
+      padding: 15px;
+    }
+  }
+  // services
+  #services{
+    padding-left: 5%;
+    padding-right: 5%;
+    .servicesbox{
+      width: 48%;
+      img{
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+}
+
+// @media (min-width: 768px) and (max-width: 1256px){
+//   // header
+//   header{
+//     padding-left: 5%;
+//     padding-right: 5%;
+//     .logo{
+//       width: 15%;
+//     }
+//     .menu{
+//       width: 85%;
+//     }
+//   }
+//   // about
+//   #about{
+//     padding-left: 5%;
+//     padding-right: 5%;
+//     .aboutbox{
+//       width: 30%;
+//       padding: 15px;
+//     }
+//   }
+//   // services
+//   #services{
+//     padding-left: 5%;
+//     padding-right: 5%;
+//     .servicesbox{
+//       width: 48%;
+//       img{
+//         width: 100%;
+//         object-fit: contain;
+//       }
+//     }
+//   }
+// }
+
+
+// and

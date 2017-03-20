@@ -1,12 +1,13 @@
 body {
   text-align: center;
   margin: 0 auto;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px; }
 
 button {
   height: 40px;
   text-transform: uppercase;
-  font-size: 17px;
+  font-size: 1.065rem;
   border-radius: 5px;
   color: white;
   padding-left: 3%;
@@ -28,13 +29,12 @@ h1 {
   padding-bottom: 5px; }
 
 h4 {
-  font-size: 19px;
+  font-size: 1.19rem;
   font-weight: 200;
   margin: 0px; }
 
 p {
   margin: 0px;
-  font-size: 16px;
   font-weight: 200;
   line-height: 31px; }
 
@@ -55,20 +55,23 @@ header {
     text-align: right;
     float: right;
     width: 70%;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%); }
-    header .menu ul li {
+    padding-top: 22px; }
+    header .menu ul {
       display: inline;
-      padding-left: 40px; }
-      header .menu ul li a {
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 17px;
-        color: #666F77; }
-      header .menu ul li a:hover {
-        color: #192024;
-        text-decoration: underline; }
+      padding-right: 40px; }
+      header .menu ul i {
+        display: none; }
+      header .menu ul li {
+        display: inline;
+        padding-left: 40px; }
+        header .menu ul li a {
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 1.065rem;
+          color: #666F77; }
+        header .menu ul li a:hover {
+          color: #192024;
+          text-decoration: underline; }
 
 .hero {
   background: url(../images/hero.jpg) no-repeat top center;
@@ -80,7 +83,7 @@ header {
     top: 50%;
     transform: translateY(-50%); }
     .hero .herotext h1 {
-      font-size: 45px;
+      font-size: 2.82rem;
       font-weight: 400;
       color: white; }
     .hero .herotext h4 {
@@ -91,7 +94,7 @@ header {
   height: 500px;
   padding: 3.5% 15% 3.5% 15%; }
   #about .abouttext h1 {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 300;
     color: gray;
     margin: 0px;
@@ -117,7 +120,6 @@ header {
       background: #4AC1FF;
       transition: all .7s ease-in-out; }
     #about .aboutbox h4 {
-      font-size: 19px;
       color: gray;
       text-transform: uppercase; }
     #about .aboutbox p {
@@ -139,7 +141,7 @@ header {
   min-height: 650px;
   padding: 3.5% 15% 7% 15%; }
   #services .servicestext h1 {
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: 300;
     color: white;
     margin: 0px;
@@ -172,5 +174,82 @@ header {
     float: left; }
   #services .right {
     float: right; }
+
+@media only screen and (min-device-width: 1px) and (max-device-width: 767px) {
+  header .menu ul {
+    list-style: none;
+    padding-right: 0px; }
+    header .menu ul i {
+      display: inline;
+      font-size: 2rem;
+      color: #192024; }
+    header .menu ul li {
+      display: block;
+      padding: 10px 0px 10px 0px;
+      display: none; }
+    header .menu ul a {
+      color: #192024; }
+
+  #about {
+    height: auto; }
+    #about .aboutbox {
+      float: none;
+      width: 100%; }
+    #about .middlebox {
+      margin: 5% 0px 5% 0px; }
+
+  #services {
+    height: 1200px; }
+    #services .servicesbox {
+      width: 100%;
+      margin-bottom: 10%; } }
+@media (max-width: 767px) {
+  header .menu ul {
+    list-style: none; }
+    header .menu ul i {
+      display: inline;
+      font-size: 2rem;
+      color: #192024; }
+    header .menu ul li {
+      display: block;
+      display: none; }
+
+  #about {
+    height: auto; }
+    #about .aboutbox {
+      float: none;
+      width: 100%; }
+    #about .middlebox {
+      margin: 5% 0px 5% 0px; }
+
+  #services {
+    height: 1200px; }
+    #services .servicesbox {
+      width: 100%;
+      margin-bottom: 10%; } }
+@media (min-device-width: 768px) and (max-device-width: 1010px) {
+  header {
+    padding-left: 5%;
+    padding-right: 5%; }
+    header .logo {
+      width: 15%; }
+    header .menu {
+      width: 85%; }
+
+  #about {
+    padding-left: 5%;
+    padding-right: 5%; }
+    #about .aboutbox {
+      width: 30%;
+      padding: 15px; }
+
+  #services {
+    padding-left: 5%;
+    padding-right: 5%; }
+    #services .servicesbox {
+      width: 48%; }
+      #services .servicesbox img {
+        width: 100%;
+        object-fit: contain; } }
 
 /*# sourceMappingURL=style.css.map */
