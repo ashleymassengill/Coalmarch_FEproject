@@ -2,25 +2,38 @@
 @media only screen and (min-device-width : 1px) and (max-device-width : 767px) {
   // header
   header{
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 100px;
     .menu{
+      padding-top: 22px;
+      i{
+        display: block;
+        color: $dkblue;
+        font-size: 2rem;
+      }
       ul{
         list-style: none;
-        padding-right: 0px;
-        i{
-          display: inline;
-          font-size: 2rem;
-          color: $dkblue;
-        }
+        padding: 0px;
         li{
           display: block;
-          padding: 10px 0px 10px 0px;
+          padding-left: 0px;
+          padding-bottom: 7px;
           display: none;
-        }
-        a{
-          color: $dkblue;
+          a{
+            color: $dkblue;
+          }
+          button{
+            padding-left: 10%;
+            padding-right: 10%;
+          }
         }
       }
     }
+  }
+  // hero
+  .hero{
+    height: 500px;
   }
   // about
   #about{
@@ -46,20 +59,38 @@
 @media(max-width: 767px) {
   // header
   header{
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 100px;
     .menu{
+      padding-top: 22px;
+      i{
+        display: block;
+        color: $dkblue;
+        font-size: 2rem;
+      }
       ul{
         list-style: none;
-        i{
-          display: inline;
-          font-size: 2rem;
-          color: $dkblue;
-        }
+        padding: 0px;
         li{
           display: block;
+          padding-left: 0px;
+          padding-bottom: 7px;
           display: none;
+          a{
+            color: $dkblue;
+          }
+          button{
+            padding-left: 10%;
+            padding-right: 10%;
+          }
         }
       }
     }
+  }
+  // hero
+  .hero{
+    height: 500px;
   }
   // about
   #about{
@@ -88,12 +119,6 @@
   header{
     padding-left: 5%;
     padding-right: 5%;
-    .logo{
-      width: 15%;
-    }
-    .menu{
-      width: 85%;
-    }
   }
   // about
   #about{
@@ -123,12 +148,6 @@
 //   header{
 //     padding-left: 5%;
 //     padding-right: 5%;
-//     .logo{
-//       width: 15%;
-//     }
-//     .menu{
-//       width: 85%;
-//     }
 //   }
 //   // about
 //   #about{

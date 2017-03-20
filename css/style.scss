@@ -1,5 +1,4 @@
 @import "variables.scss";
-@import "mixins.scss";
 
 body{
   text-align: center;
@@ -51,25 +50,23 @@ header{
   padding-left: 8.5%;
   padding-right: 8.5%;
   height: 85px;
+  z-index: 200;
   .logo{
     margin: 0;
     padding: 0;
     text-align: left;
     float: left;
-    width: 30%;
-    @include verticalcenter;
-  }
+    padding-top: 18px;
+    }
   .menu{
     text-align: right;
     float: right;
-    width: 70%;
     padding-top: 22px;
+    i{
+      display: none;
+    }
     ul{
       display: inline;
-      padding-right: 40px;
-      i{
-        display: none;
-      }
       li{
         display: inline;
         padding-left: 40px;
@@ -92,9 +89,14 @@ header{
   background: url(../images/hero.jpg) no-repeat top center;
   background-size: cover;
   height: 415px;
-  margin: 0px;
+  z-index: 1;
   .herotext{
-    @include verticalcenter;
+    height: 415px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
     h1{
       font-size: 2.82rem;
       font-weight: 400;
